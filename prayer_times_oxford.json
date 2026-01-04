@@ -1,0 +1,317 @@
+{
+  "month": "January",
+  "year": 2026,
+  "last_updated": "2026-01-04T16:33:19.798185",
+  "prayer_times": {
+    "1": {
+      "day": 1,
+      "midnight": "23:12",
+      "maghrib": "16:18",
+      "sunset": "15:58",
+      "dhuhr": "11:53",
+      "sunrise": "07:48",
+      "fajr": "06:27",
+      "imsaak": "06:12"
+    },
+    "2": {
+      "day": 2,
+      "midnight": "23:13",
+      "maghrib": "16:17",
+      "sunset": "15:57",
+      "dhuhr": "11:54",
+      "sunrise": "07:50",
+      "fajr": "06:28",
+      "imsaak": "06:13"
+    },
+    "3": {
+      "day": 3,
+      "midnight": "23:13",
+      "maghrib": "16:17",
+      "sunset": "15:57",
+      "dhuhr": "11:54",
+      "sunrise": "07:51",
+      "fajr": "06:29",
+      "imsaak": "06:14"
+    },
+    "4": {
+      "day": 4,
+      "midnight": "23:13",
+      "maghrib": "16:16",
+      "sunset": "15:56",
+      "dhuhr": "11:55",
+      "sunrise": "07:53",
+      "fajr": "06:30",
+      "imsaak": "06:15"
+    },
+    "5": {
+      "day": 5,
+      "midnight": "23:14",
+      "maghrib": "16:16",
+      "sunset": "15:56",
+      "dhuhr": "11:55",
+      "sunrise": "07:54",
+      "fajr": "06:31",
+      "imsaak": "06:16"
+    },
+    "6": {
+      "day": 6,
+      "midnight": "23:14",
+      "maghrib": "16:15",
+      "sunset": "15:55",
+      "dhuhr": "11:55",
+      "sunrise": "07:55",
+      "fajr": "06:32",
+      "imsaak": "06:17"
+    },
+    "7": {
+      "day": 7,
+      "midnight": "23:14",
+      "maghrib": "16:15",
+      "sunset": "15:55",
+      "dhuhr": "11:56",
+      "sunrise": "07:56",
+      "fajr": "06:33",
+      "imsaak": "06:18"
+    },
+    "8": {
+      "day": 8,
+      "midnight": "23:15",
+      "maghrib": "16:15",
+      "sunset": "15:55",
+      "dhuhr": "11:56",
+      "sunrise": "07:58",
+      "fajr": "06:34",
+      "imsaak": "06:19"
+    },
+    "9": {
+      "day": 9,
+      "midnight": "23:15",
+      "maghrib": "16:15",
+      "sunset": "15:55",
+      "dhuhr": "11:57",
+      "sunrise": "07:59",
+      "fajr": "06:35",
+      "imsaak": "06:20"
+    },
+    "10": {
+      "day": 10,
+      "midnight": "23:15",
+      "maghrib": "16:14",
+      "sunset": "15:54",
+      "dhuhr": "11:57",
+      "sunrise": "08:00",
+      "fajr": "06:36",
+      "imsaak": "06:21"
+    },
+    "11": {
+      "day": 11,
+      "midnight": "23:16",
+      "maghrib": "16:14",
+      "sunset": "15:54",
+      "dhuhr": "11:58",
+      "sunrise": "08:01",
+      "fajr": "06:37",
+      "imsaak": "06:22"
+    },
+    "12": {
+      "day": 12,
+      "midnight": "23:16",
+      "maghrib": "16:14",
+      "sunset": "15:54",
+      "dhuhr": "11:58",
+      "sunrise": "08:02",
+      "fajr": "06:38",
+      "imsaak": "06:23"
+    },
+    "13": {
+      "day": 13,
+      "midnight": "23:17",
+      "maghrib": "16:14",
+      "sunset": "15:54",
+      "dhuhr": "11:59",
+      "sunrise": "08:03",
+      "fajr": "06:39",
+      "imsaak": "06:24"
+    },
+    "14": {
+      "day": 14,
+      "midnight": "23:17",
+      "maghrib": "16:14",
+      "sunset": "15:54",
+      "dhuhr": "11:59",
+      "sunrise": "08:04",
+      "fajr": "06:40",
+      "imsaak": "06:25"
+    },
+    "15": {
+      "day": 15,
+      "midnight": "23:18",
+      "maghrib": "16:14",
+      "sunset": "15:54",
+      "dhuhr": "12:00",
+      "sunrise": "08:05",
+      "fajr": "06:41",
+      "imsaak": "06:26"
+    },
+    "16": {
+      "day": 16,
+      "midnight": "23:18",
+      "maghrib": "16:14",
+      "sunset": "15:54",
+      "dhuhr": "12:00",
+      "sunrise": "08:05",
+      "fajr": "06:42",
+      "imsaak": "06:27"
+    },
+    "17": {
+      "day": 17,
+      "midnight": "23:18",
+      "maghrib": "16:15",
+      "sunset": "15:55",
+      "dhuhr": "12:01",
+      "sunrise": "08:06",
+      "fajr": "06:42",
+      "imsaak": "06:27"
+    },
+    "18": {
+      "day": 18,
+      "midnight": "23:19",
+      "maghrib": "16:15",
+      "sunset": "15:55",
+      "dhuhr": "12:01",
+      "sunrise": "08:07",
+      "fajr": "06:43",
+      "imsaak": "06:28"
+    },
+    "19": {
+      "day": 19,
+      "midnight": "23:19",
+      "maghrib": "16:15",
+      "sunset": "15:55",
+      "dhuhr": "12:01",
+      "sunrise": "08:08",
+      "fajr": "06:44",
+      "imsaak": "06:29"
+    },
+    "20": {
+      "day": 20,
+      "midnight": "23:20",
+      "maghrib": "16:16",
+      "sunset": "15:56",
+      "dhuhr": "12:02",
+      "sunrise": "08:08",
+      "fajr": "06:44",
+      "imsaak": "06:29"
+    },
+    "21": {
+      "day": 21,
+      "midnight": "23:20",
+      "maghrib": "16:16",
+      "sunset": "15:56",
+      "dhuhr": "12:02",
+      "sunrise": "08:09",
+      "fajr": "06:45",
+      "imsaak": "06:30"
+    },
+    "22": {
+      "day": 22,
+      "midnight": "23:21",
+      "maghrib": "16:17",
+      "sunset": "15:57",
+      "dhuhr": "12:03",
+      "sunrise": "08:09",
+      "fajr": "06:45",
+      "imsaak": "06:30"
+    },
+    "23": {
+      "day": 23,
+      "midnight": "23:21",
+      "maghrib": "16:17",
+      "sunset": "15:57",
+      "dhuhr": "12:03",
+      "sunrise": "08:10",
+      "fajr": "06:46",
+      "imsaak": "06:31"
+    },
+    "24": {
+      "day": 24,
+      "midnight": "23:22",
+      "maghrib": "16:18",
+      "sunset": "15:58",
+      "dhuhr": "12:04",
+      "sunrise": "08:10",
+      "fajr": "06:46",
+      "imsaak": "06:31"
+    },
+    "25": {
+      "day": 25,
+      "midnight": "23:22",
+      "maghrib": "16:18",
+      "sunset": "15:58",
+      "dhuhr": "12:04",
+      "sunrise": "08:11",
+      "fajr": "06:47",
+      "imsaak": "06:32"
+    },
+    "26": {
+      "day": 26,
+      "midnight": "23:23",
+      "maghrib": "16:19",
+      "sunset": "15:59",
+      "dhuhr": "12:05",
+      "sunrise": "08:11",
+      "fajr": "06:47",
+      "imsaak": "06:32"
+    },
+    "27": {
+      "day": 27,
+      "midnight": "23:24",
+      "maghrib": "16:20",
+      "sunset": "16:00",
+      "dhuhr": "12:05",
+      "sunrise": "08:11",
+      "fajr": "06:47",
+      "imsaak": "06:32"
+    },
+    "28": {
+      "day": 28,
+      "midnight": "23:24",
+      "maghrib": "16:21",
+      "sunset": "16:01",
+      "dhuhr": "12:06",
+      "sunrise": "08:11",
+      "fajr": "06:47",
+      "imsaak": "06:32"
+    },
+    "29": {
+      "day": 29,
+      "midnight": "23:25",
+      "maghrib": "16:22",
+      "sunset": "16:02",
+      "dhuhr": "12:06",
+      "sunrise": "08:11",
+      "fajr": "06:48",
+      "imsaak": "06:33"
+    },
+    "30": {
+      "day": 30,
+      "midnight": "23:25",
+      "maghrib": "16:23",
+      "sunset": "16:03",
+      "dhuhr": "12:07",
+      "sunrise": "08:12",
+      "fajr": "06:48",
+      "imsaak": "06:33"
+    },
+    "31": {
+      "day": 31,
+      "midnight": "23:26",
+      "maghrib": "16:24",
+      "sunset": "16:04",
+      "dhuhr": "12:07",
+      "sunrise": "08:12",
+      "fajr": "06:48",
+      "imsaak": "06:33"
+    }
+  }
+}

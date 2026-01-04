@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahlulbayt Centre Oxford</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-left">
+                    <img src="./images/logo.png" alt="Ahlulbayt Centre Logo" class="hero-logo">
+                    <h1>Ahlulbayt Centre Oxford</h1>
+                </div>
+            </div>
+        </section>
+
+        <nav class="navbar">
+            <div class="nav-container">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programmes.html">Programmes</a></li>
+                    <li><a href="donate-simple.html">Donate</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="prayer-times">
+            <div class="container">
+                <div class="content-row">
+                    <div class="upcoming-program-box">
+                        <h3>Upcoming Program</h3>
+                        <div class="program-content" id="program-content">
+                            Loading...
+                        </div>
+                    </div>
+                    <div class="prayer-times-box">
+                        <h3>Prayer Times - Oxford</h3>
+                        <p id="prayer-date" class="prayer-date"></p>
+                        <table class="prayer-table">
+                        <tr>
+                            <td>Imsaak</td>
+                            <td id="imsaak-time">Loading...</td>
+                        </tr>
+                        <tr>
+                            <td>Fajr</td>
+                            <td id="fajr-time">Loading...</td>
+                        </tr>
+                        <tr>
+                            <td>Sunrise</td>
+                            <td id="sunrise-time">Loading...</td>
+                        </tr>
+                        <tr>
+                            <td>Dhuhr</td>
+                            <td id="dhuhr-time">Loading...</td>
+                        </tr>
+                        <tr>
+                            <td>Sunset</td>
+                            <td id="sunset-time">Loading...</td>
+                        </tr>
+                        <tr>
+                            <td>Maghrib</td>
+                            <td id="maghrib-time">Loading...</td>
+                        </tr>
+                        <tr>
+                            <td>Midnight</td>
+                            <td id="midnight-time">Loading...</td>
+                        </tr>
+                    </table>
+                    </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <p>Phone: <a href="tel:07881295943">07881295943</a></p>
+            </div>
+            <div class="footer-section">
+                <p>Email: <a href="mailto:ahlulbaytcentreoxford@gmail.com">ahlulbaytcentreoxford@gmail.com</a></p>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2012 by AHLULBAYT CENTRE OXFORD</p>
+                <p>UK Charity (Registered) No. 1104158</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Function to fetch upcoming program content from static JSON
+        async function fetchUpcomingProgram() {
+            try {
+                const response = await fetch('upcoming_program.json');
+                const data = await response.json();
+                
+                if (data.content) {
+                    // Preserve line breaks and whitespace
+                    document.getElementById('program-content').textContent = data.content;
+                } else {
+                    document.getElementById('program-content').textContent = 'No upcoming program scheduled.';
+                }
+            } catch (error) {
+                console.error('Error fetching upcoming program:', error);
+                document.getElementById('program-content').textContent = 'Unable to load program information.';
+            }
+        }
+        
+        // Function to fetch prayer times from static JSON file
+        async function fetchPrayerTimes() {
+            try {
+                // Fetch prayer times from JSON file
+                const response = await fetch('prayer_times_oxford.json');
+                const data = await response.json();
+                
+                // Get today's date
+                const today = new Date();
+                const day = today.getDate();
+                const dayStr = day.toString();
+                
+                // Display the date
+                const months = ['January', 'February', 'March', 'April', 'May', 'June', 
+                               'July', 'August', 'September', 'October', 'November', 'December'];
+                const dateStr = `${day.toString().padStart(2, '0')} ${months[today.getMonth()]} ${today.getFullYear()}`;
+                document.getElementById('prayer-date').textContent = dateStr;
+                
+                // Get prayer times for today
+                if (data.prayer_times && data.prayer_times[dayStr]) {
+                    const times = data.prayer_times[dayStr];
+                    
+                    // Update the prayer times on the page
+                    document.getElementById('imsaak-time').textContent = times.imsaak || 'N/A';
+                    document.getElementById('fajr-time').textContent = times.fajr || 'N/A';
+                    document.getElementById('sunrise-time').textContent = times.sunrise || 'N/A';
+                    document.getElementById('dhuhr-time').textContent = times.dhuhr || 'N/A';
+                    document.getElementById('sunset-time').textContent = times.sunset || 'N/A';
+                    document.getElementById('maghrib-time').textContent = times.maghrib || 'N/A';
+                    document.getElementById('midnight-time').textContent = times.midnight || 'N/A';
+                } else {
+                    console.error('Prayer times not found for day:', day);
+                    const timeElements = document.querySelectorAll('.time');
+                    timeElements.forEach(el => el.textContent = '--:--');
+                }
+                
+            } catch (error) {
+                console.error('Error fetching prayer times:', error);
+                // Display error message
+                const timeElements = document.querySelectorAll('.time');
+                timeElements.forEach(el => el.textContent = '--:--');
+                document.getElementById('prayer-date').textContent = 'Unable to load prayer times';
+            }
+        }
+        
+        // Load content when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            fetchPrayerTimes();
+            fetchUpcomingProgram();
+        });
+    </script>
+</body>
+</html>
